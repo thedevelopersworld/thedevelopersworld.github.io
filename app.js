@@ -8,9 +8,9 @@ function menu_open(){
     close.style["display"]="inline-block";
     menu.style["visibility"]="visible";
     searchbox.style['margin-top']="40px";
-    setTimeout(function(){   
-        menu_close(); 
-     }, 3000)
+//     setTimeout(function(){   
+//         menu_close(); 
+//      }, 3000)
  }
 
  function menu_close(){
