@@ -1,0 +1,413 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.fa{
+    color: white;
+    padding-right: 5px;
+}
+
+.brand_bar{
+    width: 100%;
+    height: 90px;
+    background-color: #140375;
+}
+
+.brand_name{
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 30px;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.domain{
+    color: #0094FF;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+   /* .contact_bar{
+    width: 430px;
+    height: 35px;
+    background-color: rgb(34, 197, 20);
+    float: right;
+}
+
+.call_info{
+    padding-right: 0px;
+    font-weight: 800;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+} 
+
+ .mail{
+    font-size: 14px;
+    font-weight: 800;
+    padding-right: 20px;
+    padding-top: 7px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-phone{
+    display: inline-block;
+    padding-top: 7px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+.fa-envelope{
+    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+ */
+
+.fa-bars{
+    z-index: 1;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+.nav{
+    width: 100%;
+    height: 45px;
+    background-color: #1569c8;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.home{
+    margin-left: 10px !important;
+    color: white;
+}
+
+
+.fa-home{
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.fa-user{
+    padding-right: 10px;
+}
+
+.fa-archive{
+    padding-right: 10px;
+}
+
+.active{
+    margin-left: 10px;
+    background-color: #124ca3;
+}
+
+.nav a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.6s ease-in-out;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+.search{
+    margin-top: 45px;
+    width: 100%;
+    height: 100px;
+}
+
+#searchbox{
+    z-index: 3;
+    padding-left: 15px;
+    width: 50%;
+    height: 35px;
+    border: 1px ridge black;
+    border-radius: 5px;
+}
+
+#searchbtn{
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    background-color: rgb(9, 138, 37) ;
+    height: 35px;
+    border-radius: 7px;
+}
+
+#searchbtn:focus{
+    background-color: rgb(9, 138, 37) ;
+    transition: 0.3s;
+    
+}
+
+.fa-times{
+    display: none;
+    z-index: 1;
+    padding-top: 10px;
+    margin-right: 10px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu{
+    background-color:  #1569c8;
+    width: 100%;
+    height: 150px;
+    visibility: hidden;
+}
+
+.menu ul{
+    z-index: 2;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: -32px;
+}
+
+.menu ul li{
+    margin-bottom: 20px;
+}
+
+
+.home1{
+    margin-left: -11px;
+}
+
+#show-only{
+    display: inline-block;
+}
+.fa-bars{
+    display: none;
+}
+
+@media (max-width: 1600px){
+    .menu {
+        display: none;
+    }
+    .fa-times{
+        display: none;
+    }
+}
+
+
+@media (max-width: 650px){
+    .nav a{
+       display: none;
+    }
+    #show-only{
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .fa-times{
+        display: none;
+        padding-top: 10px;
+        padding-left: 92%;
+        font-size: 22px;
+    }
+    .fa-times{
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .menu ul{
+        margin-top: -30px;
+    }
+    .contact_bar{
+        width: 100%;
+        float: left;
+        margin-top: 18px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 520px){
+    .brand_name{
+        padding-left: 20px;
+        margin-top: 5px;
+        font-size: 34px;
+    }
+    .domain{
+        font-size: 33px;
+    }
+    #show-only{
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .fa-times{
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .menu ul{
+        margin-top: -30px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
+@media (max-width: 430px){
+    .brand_name{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .domain{
+        font-size: 30px;
+    }
+    #show-only{
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .fa-times{
+        display: none;
+        padding-left: 90%;
+        font-size: 20px;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .menu ul{
+        margin-top: -28px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 390px){
+
+    .brand_bar{
+        height: 70px;
+    }
+    .brand_name{
+        margin-top: 0px;
+        font-size: 26px;
+    }
+    .domain{
+        font-size: 26px;
+    }
+    #show-only{
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .fa-times{
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .menu ul{
+        margin-top: -28px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
+
+@media (max-width: 345px){
+
+    .brand_bar{
+        height: 70px;
+    }
+    .brand_name{
+        margin-top: 3px;
+        font-size: 23px;
+    }
+    .domain{
+        font-size: 23px;
+    }
+    .nav{
+        height: 35px;
+    }
+    .fa-bars{
+        font-size: 18px;
+        padding-top: 7px;
+        margin-bottom: 10px;
+    }
+    #show-only{
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .menu ul{
+        margin-top: -25px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
+@media (max-width: 308px){
+
+    .brand_bar{
+        height: 55px;
+    }
+    .brand_name{
+        padding-left: 15px;
+        margin-top: -2px;
+        font-size: 20px;
+    }
+    .domain{
+        font-size: 20px;
+    }
+    .nav{
+        height: 30px;
+    }
+    .fa-bars{
+        font-size: 15px;
+        padding-top: 7px;
+        margin-bottom: 10px;
+    }
+    #show-only{                  
+        display: none;
+    }
+    .fa-bars{
+        display: inline-block;
+    }
+    .fa-times{
+        display: none;
+        font-size: 18px;
+    }
+    .menu ul{
+        margin-top: -25px;
+    }
+    .search{
+        margin-top: -110px;
+    }
+}
